@@ -1,7 +1,6 @@
 # Core encryption/decryption function
 def caesar_cipher(text, shift, mode):
     result = ""
-    shift %= 26  # Ensure the shift value is within the range of 0-25
 
     if mode == "decrypt":
         shift = -shift  # Reverse the shift for decryption
